@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  --bg:       #0C0C0C;
+  --surface:  #161616;
+  --lift:     #1F1F1F;
+  --border:   #2A2A2A;
+  --border2:  #383838;
+  --text:     #F2EFE9;
+  --muted:    #888888;
+  --faint:    #444444;
+  --gold:     #C8924A;
+  --gold-lt:  rgba(200,146,74,0.12);
+
+  --serif: 'DM Serif Display', 'Noto Serif TC', Georgia, serif;
+  --sans:  'DM Sans', 'Noto Sans TC', system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: var(--gold-lt); color: var(--gold); }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border2); }
+
+/* Wrap */
+.wrap {
+  width: 100%;
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+@media (min-width: 768px)  { .wrap { padding-left: 3rem;   padding-right: 3rem;   } }
+@media (min-width: 1280px) { .wrap { padding-left: 4rem;   padding-right: 4rem;   } }
+
+/* Section divider */
+.section-rule { border-top: 1px solid var(--border); }
+
+/* Tag */
+.tag {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border: 1px solid var(--border2);
+  color: var(--muted);
+}
+.tag-gold {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: var(--gold-lt);
+}
+
+/* Btn */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: 1px solid var(--border2);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.15s;
+  text-decoration: none;
+}
+.btn:hover { border-color: var(--text); }
+.btn-gold { background: var(--gold); border-color: var(--gold); color: #000; }
+.btn-gold:hover { background: #b57f3e; border-color: #b57f3e; }
+
+/* Page enter */
+.page-in { animation: fadeIn 0.3s ease both; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Skill pill */
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-size: 16px;
+  color: var(--muted);
+  transition: all 0.15s;
+}
+.skill-pill:hover { border-color: var(--gold); color: var(--gold); }
+
+/* Project card */
+.proj-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition: border-color 0.15s, transform 0.2s;
+}
+.proj-card:hover { border-color: var(--border2); transform: translateY(-2px); }
