@@ -13,7 +13,7 @@ const ICONS = {
   'MySQL':               '🐬',
   'MongoDB':             '🍃',
   'Redis':               '🧱',
-  'SQLAlchemy':          '🗃️',
+  'SQLAlchemy':          '🧰',
   // Frontend
   'HTML':                '🌐',
   'CSS':                 '🎨',
