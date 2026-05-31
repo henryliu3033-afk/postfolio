@@ -1,6 +1,20 @@
 import { motion } from 'motion/react'
 
 const ICONS = {
+  // Backend
+  'Python':              '🐍',
+  'FastAPI':             '🚀',
+  'Uvicorn':             '🦄',
+  'JWT 驗證':            '🔑',
+  'JWT Auth':            '🔑',
+  'bcrypt':              '🔒',
+  // Databases
+  'PostgreSQL':          '🐘',
+  'MySQL':               '🐬',
+  'MongoDB':             '🍃',
+  'Redis':               '🧱',
+  'SQLAlchemy':          '🗃️',
+  // Frontend
   'HTML':                '🌐',
   'CSS':                 '🎨',
   'JavaScript (ES6)':    '⚡',
@@ -13,10 +27,14 @@ const ICONS = {
   'Component Design':    '🧩',
   'Motion':              '✨',
   'RWD':                 '📱',
+  // DevOps & Tools
+  'Docker':              '🐳',
+  'Railway':             '🚄',
   'Git / GitHub':        '🌿',
   'Vite':                '⚡',
   'REST API':            '🔌',
   'Vercel':              '▲',
+  // AI
   'ChatGPT':             '🤖',
   'Claude':              '🧠',
   'Gemini':              '💎',
