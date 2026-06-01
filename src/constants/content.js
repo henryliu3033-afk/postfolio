@@ -27,7 +27,7 @@ export const CONTENT = {
       title: '使用的工具',
       cats: [
         { name: '後端核心',   items: ['Python', 'FastAPI', 'Uvicorn', 'REST API', 'JWT 驗證', 'bcrypt'] },
-        { name: '資料庫',     items: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'SQLAlchemy'] },
+        { name: '資料庫',     items: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis'] },
         { name: '前端核心',   items: ['JavaScript (ES6)', 'React', 'React Router', 'Zustand', 'Tailwind CSS'] },
         { name: '部署與工具', items: ['Docker', 'Railway', 'Vercel', 'Git / GitHub', 'Vite'] },
         { name: 'AI 工具',    items: ['ChatGPT', 'Claude', 'Gemini'] }
@@ -73,7 +73,7 @@ export const CONTENT = {
       title: 'Tools I Use',
       cats: [
         { name: 'Backend',        items: ['Python', 'FastAPI', 'Uvicorn', 'REST API', 'JWT Auth', 'bcrypt'] },
-        { name: 'Databases',      items: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'SQLAlchemy'] },
+        { name: 'Databases',      items: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis'] },
         { name: 'Frontend',       items: ['JavaScript (ES6)', 'React', 'React Router', 'Zustand', 'Tailwind CSS'] },
         { name: 'DevOps & Tools', items: ['Docker', 'Railway', 'Vercel', 'Git / GitHub', 'Vite'] },
         { name: 'AI Tools',       items: ['ChatGPT', 'Claude', 'Gemini'] }
@@ -106,7 +106,7 @@ export const PROJECTS = [
     demo:   'https://form-indol-pi.vercel.app',
     img:    'https://images.unsplash.com/photo-1523398002811-999ca8dec234?w=600&q=80',
     fullstack:     true,
-    backendStack:  ['FastAPI', 'MongoDB', 'JWT', 'Docker'],
+    backendStack:  ['FastAPI', 'MySQL', 'JWT', 'Docker'],
     backendGithub: 'https://github.com/henryliu3033-afk/form-backend',
   },
   {
